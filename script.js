@@ -38,5 +38,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Inicializa con el idioma español
-    // setLanguage('es');
+    setLanguage('es');
 });

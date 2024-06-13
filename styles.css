@@ -1,3 +1,11 @@
+body {
+    background-image: url('_1321f0c9-3b77-4f20-817a-bcd79a6ffd70.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 body.light-mode {
     background-color: #ffffff;
     color: #000000;
@@ -12,12 +20,22 @@ body.dark-mode {
     padding: 5px;
 }
 
+.navbar-logo {
+    height: 40px; /* Ajusta la altura según tus preferencias */
+    width: auto;  /* Mantén la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
 .navbar-light.bg-light {
     background-color: #f8f9fa !important;
 }
 
 .navbar-dark.bg-dark {
     background-color: #343a40 !important;
+}
+
+.container-content{
+    padding: 10px;
 }
 
 .jumbotron {
@@ -49,14 +67,22 @@ body.dark-mode .card {
     color: #000000;
 }
 
+header{
+    opacity: 0.8;
+}
+
 body.dark-mode .card-title, body.dark-mode .card-text {
     color: #ffffff;
 }
 
 /* Estilo general para las secciones de habilidades */
-#skills {
-    padding: 50px 0;
+#skills, #experience {
+    padding: 10px;
+    background-color: #0a0a0a;
+    opacity: 0.8;
+    color: #ffffff;
 }
+
 
 .section-title {
     margin-top: 30px;
@@ -67,7 +93,6 @@ body.dark-mode .card-title, body.dark-mode .card-text {
     margin-bottom: 40px;
 }
 
-/* Estilos para los iconos */
 .skills-section .col-6 {
     display: flex;
     flex-direction: column;
@@ -80,7 +105,6 @@ body.dark-mode .card-title, body.dark-mode .card-text {
     margin-bottom: 10px;
 }
 
-/* Colores personalizados para cada tipo de icono */
 .database-icon {
     color: #336699; /* Color azul para iconos de bases de datos */
 }
@@ -173,4 +197,8 @@ body.dark-mode .card-title, body.dark-mode .card-text {
 
 .angular-icon {
     color: #dd0031; /* Color para Angular */
+}
+
+#contact{
+    opacity: 0.8;
 }
