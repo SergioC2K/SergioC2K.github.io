@@ -1,0 +1,176 @@
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar{
+    padding: 5px;
+}
+
+.navbar-light.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.navbar-dark.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.jumbotron {
+    background: #f8f9fa;
+    margin-bottom: 0;
+}
+
+body.dark-mode .jumbotron {
+    background: #1c1c1c;
+}
+
+#about, #contact {
+    background: #e9ecef;
+}
+
+body.dark-mode #about, body.dark-mode #contact {
+    background: #1f1f1f;
+}
+
+.card {
+    background: #ffffff;
+}
+
+body.dark-mode .card {
+    background: #2c2c2c;
+}
+
+.card-title, .card-text {
+    color: #000000;
+}
+
+body.dark-mode .card-title, body.dark-mode .card-text {
+    color: #ffffff;
+}
+
+/* Estilo general para las secciones de habilidades */
+#skills {
+    padding: 50px 0;
+}
+
+.section-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.skills-section {
+    margin-bottom: 40px;
+}
+
+/* Estilos para los iconos */
+.skills-section .col-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-section i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Colores personalizados para cada tipo de icono */
+.database-icon {
+    color: #336699; /* Color azul para iconos de bases de datos */
+}
+
+.language-icon {
+    color: #009933; /* Color verde para iconos de lenguajes de programación */
+}
+
+.framework-icon {
+    color: #dd0031; /* Color rojo para iconos de frameworks */
+}
+
+/* Responsividad */
+@media (max-width: 767.98px) {
+    .skills-section .col-6 {
+        font-size: 0.9rem;
+    }
+
+    .skills-section i {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .skills-section .col-md-4 {
+        font-size: 1rem;
+    }
+
+    .skills-section i {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .skills-section .col-lg-3 {
+        font-size: 1.1rem;
+    }
+
+    .skills-section i {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .skills-section .col-lg-3 {
+        font-size: 1.2rem;
+    }
+
+    .skills-section i {
+        font-size: 3.5rem;
+    }
+}
+
+/* Colores personalizados para cada habilidad */
+.html5-icon {
+    color: #e34c26;
+}
+
+.css3-icon {
+    color: #264de4;
+}
+
+.js-icon {
+    color: #f7df1e;
+}
+
+.react-icon {
+    color: #61dafb;
+}
+
+.nodejs-icon {
+    color: #68a063;
+}
+
+.python-icon {
+    color: #306998;
+}
+
+.oracle-icon {
+    color: #f80000;
+}
+
+.java-icon {
+    color: #007396; /* Color para Java */
+}
+
+.vue-icon {
+    color: #42b883; /* Color para Vue.js */
+}
+
+.angular-icon {
+    color: #dd0031; /* Color para Angular */
+}
