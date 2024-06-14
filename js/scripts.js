@@ -22,6 +22,11 @@ window.addEventListener('DOMContentLoaded', event => {
         }
 
     };
+    const myEmail = "sergio0725m@gmail.com";
+    const emailInput = document.getElementById('email');
+
+    emailInput.value = myEmail;
+    emailInput.setAttribute('disabled', 'disabled');
 
     // Shrink the navbar 
     navbarShrink();
@@ -36,7 +41,36 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#mainNav',
             rootMargin: '0px 0px -40%',
         });
-    };
+    }
+
+
+    async function copiarTexto(texto) {
+        try {
+            await navigator.clipboard.writeText(texto);
+            console.log("Texto copiado al portapapeles correctamente.");
+        } catch (error) {
+            console.error("Error al copiar el texto:", error);
+        }
+    }
+
+
+    function showAlert(message) {
+        const alertHTML = `
+                <div class="alert alert-info alert-dismissible fade show alert-overlay" role="alert">
+                    <i class="fas fa-info fa-fw"></i>  <strong>${message}</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            `;
+        document.body.insertAdjacentHTML('beforeend', alertHTML);
+    }
+
+    const buttonCopyEmail = document.getElementById('buttonCopyEmail');
+
+    buttonCopyEmail.addEventListener('click', event => {
+      copiarTexto(myEmail);
+      showAlert(' Copied to clipboard successfully.');
+    })
+
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
