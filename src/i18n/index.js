@@ -28,6 +28,7 @@ class I18n {
       const translations = await this.loadTranslationsObjects();
       this.translations.es = translations.es;
       this.translations.en = translations.en;
+      this.notifyAll();
     } catch (error) {
       console.error("Error loading data");
     }
