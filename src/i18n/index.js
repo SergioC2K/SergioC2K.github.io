@@ -1,22 +1,16 @@
 class I18n {
-  constructor(callbackCuandoListo) {
-    this.currentLang = navigator.language ?? "es"; // Por defecto español
+  constructor() {
+    this.currentLang = (navigator.language || "es").split("-")[0];
     this.translations = {
       es: null,
       en: null,
     };
-    this.observer = []; // Los que están esperando que cambie el idioma
-    this.isReady = false;
-    // Cargar idioma guardado (si existe)
+    this.observer = [];
+
     const isSaved = localStorage.getItem("lang");
     if (isSaved) this.currentLang = isSaved;
 
-    // Cargar los archivos de traducción
-    this.loadTranslations().then(() => {
-      this.isReady = true;
-      this.notifyAll(); // 🆕 Notificar a todos que ya cargó
-      if (callbackCuandoListo) callbackCuandoListo();
-    });
+    this.loadTranslations();
   }
 
   selectedLang() {
@@ -31,6 +25,7 @@ class I18n {
       this.notifyAll();
     } catch (error) {
       console.error("Error loading data");
+      this.notifyAll();
     }
   }
 
