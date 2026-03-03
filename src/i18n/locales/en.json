@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "role": "Software Developer",
+    "firtsDescription": "Software Developer with +5 years of experience in programming languages and multiple tools, optimizing processes through scripts. Ability to adapt to any language, diagnose system failures and detect security vulnerabilities.",
+    "secondDescription": "Experience in creating user interfaces, microservices development, database management, complex queries, stored procedures and mobile development."
+  },
+  "navigation": {
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience"
+  },
+  "skills": {
+    "title": "My Skills"
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "name": "Drag and Drop To-do",
+        "technologies": "Vanilla.js • HTML • CSS",
+        "description": "A classic to-do list with drag and drop functionality",
+        "linkText": "View project",
+        "linkUrl": "#"
+      },
+      {
+        "name": "CV Generator",
+        "technologies": "Flask • Tailwind • Vanilla.js",
+        "description": "Modern interface to create CVs with Harvard format",
+        "linkText": "View project",
+        "linkUrl": "#"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Work Experience",
+    "items": [
+      {
+        "period": "2021 - 2024",
+        "role": "Development Analyst",
+        "company": "ActiveOne",
+        "description": "ActiveOne - Designed scalable development architectures and reusable code solutions using Angular, improving sustainability and reducing development time."
+      },
+      {
+        "period": "2019 - 2021",
+        "role": "Development Analyst",
+        "company": "SENA Software Factory",
+        "description": "SENA Software Factory - Created a web application with the MERN stack to assess COVID-19 symptoms and eligibility for campus entry validation."
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "period": "2018 - 2020",
+        "degree": "Information Systems Analysis and Development",
+        "institution": "SENA Center for Services and Business Management",
+        "details": "SENA Center for Services and Business Management - Software Development Technology Degree"
+      }
+    ]
+  }
+}

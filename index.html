@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Sergio Carvajal</title>
+    <link rel="shortcut icon" href="assets/img/logoPortafolio.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./src/style.css">
 </head>
@@ -12,25 +13,29 @@
 <body>
     <div class="container">
         <!-- Panel izquierdo con información personal -->
+
         <div class="sidebar">
+
             <img src="./assets/img/foto 2025.jpg" alt="Foto de perfil" class="profile-img">
-            <h1 class="name">Sergio Carvajal</h1>
-            <p class="title">Software Developer</p>
-            <p class="description">
+            <h1 class="name">Sergio Carvajal Gomez</h1>
+            <p data-i18n="metadata.role" class="title">Software Developer</p>
+            <p data-i18n="metadata.firtsDescription" class="firtsDescription">
                 Desarrollador de Software con +5 de experiencia en lenguajes de
                 programación y múltiples herramientas, optimización procesos mediante scripts. Capacidad
                 para adaptarse a
                 cualquier lenguaje, diagnosticar fallos del sistema y detectar vulnerabilidades de seguridad.
             </p>
-            <p class="description">
+            <p data-i18n="metadata.secondDescription" class="secondDescription">
                 Experiencia en creación de interfaces de usuario, desarrollo de microservicios, gestión de bases de
                 datos, consultas complejas, procedimientos almacenados y desarrollo móvil.
             </p>
-
+            <br>
             <div class="social-links">
                 <a target="_blank" href="https://github.com/SergioC2K"><i class="fab fa-github"></i></a>
                 <a target="_blank" href="https://www.linkedin.com/in/sergioc2k"><i class="fab fa-linkedin-in"></i></a>
             </div>
+
+
 
             <div class="contact-info">
                 <div class="contact-item">
@@ -42,19 +47,32 @@
                     <span>Medellín, Colombia</span>
                 </div>
             </div>
-        </div>
 
+            <div class="language-selector-container">
+                <div class="language-selector" id="languageSelector">
+                    <button class="lang-btn" data-lang="es">
+                        <span class="flag">🇪🇸</span>
+                        <span class="lang-text">ES</span>
+                    </button>
+                    <button class="lang-btn" data-lang="en">
+                        <span class="flag">🇬🇧</span>
+                        <span class="lang-text">EN</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
         <!-- Panel derecho con pestañas -->
         <div class="main-content">
             <div class="tabs">
-                <div class="tab active" data-target="skills">Habilidades</div>
-                <div class="tab" data-target="projects">Proyectos</div>
-                <div class="tab" data-target="experience">Experiencia</div>
+                <div data-i18n="navigation.skills" class="tab active" data-target="skills">Habilidades</div>
+                <div data-i18n="navigation.projects" class="tab" data-target="projects">Proyectos</div>
+                <div data-i18n="navigation.experience" class="tab" data-target="experience">Experiencia</div>
             </div>
 
             <!-- Contenido de Habilidades -->
             <div class="tab-content active" id="skills">
-                <h2 class="section-title">Mis Habilidades</h2>
+                <h2 data-i18n="skills.title" class="section-title">Mis Habilidades</h2>
                 <div class="skills-grid">
                     <div class="skill-item">
                         <div class="skill-name">
@@ -160,17 +178,20 @@
 
             <!-- Contenido de Proyectos -->
             <div class="tab-content" id="projects">
-                <h2 class="section-title">Proyectos</h2>
+                <h2 data-i18n="projects.title" class="section-title">Proyectos</h2>
                 <div class="project-grid">
                     <div class="project-card">
                         <div class="project-img">
                             <i class="fa fa-tasks"></i>
                         </div>
                         <div class="project-info">
-                            <h3 class="project-title">Drag and drop To do</h3>
+                            <h3 data-i18n="projects.items[0].name" class="project-title">Drag and drop To do</h3>
                             <span class="project-subtitle">Vanilla.js • HTML • CSS</span>
-                            <p class="project-desc">Todo list de siempre con drag and drop</p>
-                            <a target="_blank" href="https://board-todo-list.onrender.com/" class="project-link">
+                            <p data-i18n="projects.items[0].description" class="project-desc">Todo list de siempre con
+                                drag and
+                                drop</p>
+                            <a data-i18n="projects.items[0].linkText" target="_blank"
+                                href="https://board-todo-list.onrender.com/" class="project-link">
                                 Ver proyecto <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -179,11 +200,13 @@
                             <i class="fa-solid fa-file-pdf"></i>
                         </div>
                         <div class="project-info">
-                            <h3 class="project-title">CV Generator</h3>
+                            <h3 data-i18n="projects.items[1].name" class="project-title">CV GeneratorInator</h3>
                             <span class="project-subtitle">Flask • Tailwind • Vanilla.js </span>
-                            <p class="project-desc">Interfaz moderna para crear cv con formato harvard.
+                            <p data-i18n="projects.items[1].description" class="project-desc">Interfaz moderna para
+                                crear cv con formato harvard.
                             </p>
-                            <a target="_blank" href="https://cv-generator-cdu1.onrender.com/" class="project-link">Ver
+                            <a data-i18n="projects.items[1].linkText" target="_blank"
+                                href="https://cv-generator-cdu1.onrender.com/" class="project-link">Ver
                                 proyecto <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -205,31 +228,36 @@
 
             <!-- Contenido de Experiencia -->
             <div class="tab-content" id="experience">
-                <h2 class="section-title">Experiencia Laboral</h2>
+                <h2 data-i18n="experience.title" class="section-title">Experiencia Laboral</h2>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-date">2021 - 2024</div>
-                        <h3 class="timeline-title">Analista de Desarrollo</h3>
-                        <p class="timeline-desc">ActiveOne - Diseñé arquitecturas de desarrollo escalables y
+                        <h3 data-i18n="experience.items[0].role" class="timeline-title">Analista de Desarrollo</h3>
+                        <p data-i18n="experience.items[0].description" class="timeline-desc">ActiveOne - Diseñé
+                            arquitecturas
+                            de desarrollo escalables y
                             soluciones de código reutilizable utilizando Angular, mejorando la sostenibilidad
                             y reduciendo el tiempo de desarrollo.</p>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2019 - 2021</div>
-                        <h3 class="timeline-title">Analista de Desarrollo</h3>
-                        <p class="timeline-desc">Fabrica de Software SENA - Creé una aplicación web en con el stack MERN
+                        <h3 data-i18n="experience.items[1].role" class="timeline-title">Analista de Desarrollo</h3>
+                        <p data-i18n="experience.items[1].description" class="timeline-desc">Fabrica de Software SENA -
+                            Creé una aplicación web en con el stack MERN
                             para
                             evaluar síntomas de COVID-19 y elegibilidad para validar el ingreso al campus.
                         </p>
                     </div>
                 </div>
 
-                <h2 class="section-title" style="margin-top: 40px;">Educación</h2>
+                <h2 data-i18n="education.title" class="section-title" style="margin-top: 40px;">Educación</h2>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-date">2018 - 2020</div>
-                        <h3 class="timeline-title">Análisis y Desarrollo de Sistemas de información</h3>
-                        <p class="timeline-desc">Sena Centro de servicios y Gestion Empresarial - Tecnologia en
+                        <h3 data-i18n="education.items[0].degree" class="timeline-title">Análisis y Desarrollo de
+                            Sistemas de información</h3>
+                        <p data-i18n="education.items[0].details" class="timeline-desc">Sena Centro de servicios y
+                            Gestion Empresarial - Tecnologia en
                             desarrollo de software</p>
                     </div>
                 </div>
@@ -238,6 +266,7 @@
         </div>
     </div>
 
+    <script src="src/i18n/index.js"></script>
     <script src="src/script.js"></script>
 </body>
 

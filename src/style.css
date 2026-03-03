@@ -464,3 +464,88 @@ body {
         font-size: 20px;
     }
 }
+
+/* button language */
+
+
+.language-selector-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.language-selector {
+    display: inline-flex;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    outline: none;
+}
+
+.lang-btn .flag {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.lang-btn .lang-text {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo para el botón activo */
+.lang-btn.active {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transform: scale(1.02);
+}
+
+/* Efecto hover en botones no activos */
+.lang-btn:not(.active):hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Para fondos oscuros/claros, ajusta colores */
+@media (prefers-color-scheme: light) {
+    .language-selector {
+        background: rgba(0, 0, 0, 0.05);
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .lang-btn {
+        color: #333;
+    }
+
+    .lang-btn.active {
+        background: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .lang-btn:not(.active):hover {
+        background: rgba(0, 0, 0, 0.05);
+    }
+}

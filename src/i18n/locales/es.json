@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "role": "Desarrollador de Software",
+    "firtsDescription": "Desarrollador de Software con +5 de experiencia en lenguajes de programación y múltiples herramientas, optimización procesos mediante scripts. Capacidad para adaptarse a cualquier lenguaje, diagnosticar fallos del sistema y detectar vulnerabilidades de seguridad.",
+    "secondDescription": "Experiencia en creación de interfaces de usuario, desarrollo de microservicios, gestión de bases de datos, consultas complejas, procedimientos almacenados y desarrollo móvil."
+  },
+  "navigation": {
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia"
+  },
+  "skills": {
+    "title": "Mis Habilidades"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "items": [
+      {
+        "name": "Drag and drop To do",
+        "technologies": "Vanilla.js • HTML • CSS",
+        "description": "Todo list de siempre con drag and drop",
+        "linkText": "Ver proyecto",
+        "linkUrl": "#"
+      },
+      {
+        "name": "CV Generator",
+        "technologies": "Flask • Tailwind • Vanilla.js",
+        "description": "Interfaz moderna para crear cv con formato harvard.",
+        "linkText": "Ver proyecto",
+        "linkUrl": "#"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "items": [
+      {
+        "period": "2021 - 2024",
+        "role": "Analista de Desarrollo",
+        "company": "ActiveOne",
+        "description": "ActiveOne - Diseñé arquitecturas de desarrollo escalables y soluciones de código reutilizable utilizando Angular, mejorando la sostenibilidad y reduciendo el tiempo de desarrollo."
+      },
+      {
+        "period": "2019 - 2021",
+        "role": "Analista de Desarrollo",
+        "company": "Fabrica de Software SENA",
+        "description": "Fabrica de Software SENA - Creé una aplicación web en con el stack MERN para evaluar síntomas de COVID-19 y elegibilidad para validar el ingreso al campus."
+      }
+    ]
+  },
+  "education": {
+    "title": "Educación",
+    "items": [
+      {
+        "period": "2018 - 2020",
+        "degree": "Análisis y Desarrollo de Sistemas de información",
+        "institution": "Sena Centro de servicios y Gestion Empresarial",
+        "details": "Sena Centro de servicios y Gestion Empresarial - Tecnologia en desarrollo de software"
+      }
+    ]
+  }
+}
