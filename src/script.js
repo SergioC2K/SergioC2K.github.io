@@ -11,15 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
         b.classList.toggle("active", b.dataset.lang === i18n.selectedLang());
       });
     });
-
-    console.log(i18n.translateData("projects[0].name"));
   });
 
   function translateAllValues() {
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       const translation = i18n.translateData(key);
-      // console.log(translation);
       if (translation && translation !== el.textContent) {
         el.textContent = translation;
       }

@@ -29,7 +29,7 @@ class I18n {
       this.translations.es = translations.es;
       this.translations.en = translations.en;
     } catch (error) {
-      console.log(error);
+      console.error("Error loading data");
     }
   }
 
