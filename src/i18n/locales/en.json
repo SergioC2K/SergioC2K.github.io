@@ -16,16 +16,23 @@
     "title": "Projects",
     "items": [
       {
-        "name": "Drag and Drop To-do",
+        "name": "C2K Commands",
         "technologies": "Vanilla.js • HTML • CSS",
-        "description": "A classic to-do list with drag and drop functionality",
+        "description": "Everyday commands with a single click.",
         "linkText": "View project",
         "linkUrl": "#"
       },
       {
-        "name": "CV Generator",
-        "technologies": "Flask • Tailwind • Vanilla.js",
-        "description": "Modern interface to create CVs with Harvard format",
+        "name": "C2KCV Generator",
+        "technologies": "Flask • Tailwind • Vanilla.js • Redis • OpenAI",
+        "description": "Modern interface to create CVs with Harvard format.",
+        "linkText": "View project",
+        "linkUrl": "#"
+      },
+      {
+        "name": "C2K JobScraper",
+        "technologies": "Java • Angular • PostgreSQL • WebHooks",
+        "description": "Scrape the busiest job portals, filtering by the entered position.",
         "linkText": "View project",
         "linkUrl": "#"
       }

@@ -16,17 +16,24 @@
     "title": "Proyectos",
     "items": [
       {
-        "name": "Drag and drop To do",
+        "name": "C2K Commands",
         "technologies": "Vanilla.js • HTML • CSS",
-        "description": "Todo list de siempre con drag and drop",
+        "description": "Comandos del dia a dia en un solo clic.",
         "linkText": "Ver proyecto",
         "linkUrl": "#"
       },
       {
-        "name": "CV Generator",
-        "technologies": "Flask • Tailwind • Vanilla.js",
+        "name": "C2KCV Generator",
+        "technologies": "Flask • Tailwind • Vanilla.js • Redis • OpenAI",
         "description": "Interfaz moderna para crear cv con formato harvard.",
         "linkText": "Ver proyecto",
+        "linkUrl": "#"
+      },
+      {
+        "name": "C2K JobScraper",
+        "technologies": "Java • Angular • PostgreSQL • WebHooks",
+        "description": "Scrapea portales de trabajo, mas concurridas filtrando por posicion ingresada.",
+        "linkText": "View project",
         "linkUrl": "#"
       }
     ]
